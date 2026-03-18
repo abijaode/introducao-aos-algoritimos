@@ -15,10 +15,10 @@
 temperatura = int(input("Digite a temperatura em Celsius: "))
 
 if temperatura < 10:
-    print("A temperatura está baixa: ", temperatura)
+    print("Temperatura baixa")
 
-elif temperatura > 10 and temperatura > 25:
-    print("A temperatura está agradavel: ", temperatura)
-    
+elif temperatura >= 10 and temperatura <= 25:
+    print("Temperatura agradável")
+
 else:
-    print("A temperatura está alta: ", temperatura)
+    print("Temperatura alta")
