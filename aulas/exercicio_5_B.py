@@ -15,3 +15,17 @@
 # Versão A: utilizando condicionais aninhadas.
 # Versão B: tentando reduzir o número de níveis de aninhamento usando operadores lógicos (and).
 
+media = (float(input("Digite a sua média final: ")))
+frequencia = int(input("Digite a sua frequência: "))
+
+if frequencia < 75:
+    print("Você foi reprovado por falta.")
+
+elif media >= 60:
+    print("Parabéns você foi aprovado!")
+
+elif media >= 40:
+    print("Você está de recuperação.")
+
+else:
+    print("Você foi reprovado por nota.")

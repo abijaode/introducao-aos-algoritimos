@@ -19,13 +19,13 @@ media = (float(input("Digite a sua média final: ")))
 frequencia = int(input("Digite a sua frequência: "))
 
 if frequencia < 75:
-    print("Você foi reprovado.")
-
-elif media >= 60:
-    print("Parabéns você foi aprovado!")
-
-elif media <= 59 and media > 40:
-    print("Você está de recuperação.")
+    print("Voce foi reprovado por falta.")
 
 else:
-    print("Você foi reprovado.")
+    if media >= 60:
+        print("Voce foi aprovado.")
+    else:
+        if media >= 40 and media <= 59:
+            print("Voce está de recuperação.")
+        else:
+            print("Voce está reprovado por nota.")
