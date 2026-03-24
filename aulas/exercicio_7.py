@@ -16,6 +16,20 @@
 # a classificação obtida
 # e, se aplicável, o título de destaque
 
-pontuacao =  float(input("Digite sua pontuação obtida: "))
-tempo = int(input("Digite o tempo que vc demorou para terminar, em minutos: "))
+pontuacao = int(input("Pontuação: "))
+tempo = int(input("Tempo (min): "))
 
+if pontuacao >= 90:
+    print("Classificação: Ouro")
+
+    if tempo < 120:
+        print("Participante destaque da competição")
+
+elif pontuacao >= 70:
+    print("Classificação: Prata")
+
+elif pontuacao >= 50:
+    print("Classificação: Bronze")
+
+else:
+    print("Sem medalha")
