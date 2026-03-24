@@ -2,4 +2,13 @@
 # Este exercício exige o uso de repetição com contador e acumulador.
 
 contador = 1
-nota = (int(input("Digite a primeira nota: ")))
+resultado = 0
+
+while contador <= 5:
+    nota = int(input(f"Digite a {contador} nota: "))
+    resultado = resultado + nota
+    contador = contador + 1
+
+media = resultado / 5
+
+print("A média é:", media)
