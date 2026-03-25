@@ -9,9 +9,17 @@
 
 contador = 0
 media = 0
+total = 0
 
 venda = (int(input("Digite o valor da venda:")))
 
 while venda != 0:
+    contador = contador + 1
+    total = total + venda
+    venda = (int(input("Digite o valor do novo produto: ")))
 
-    
+media = total / contador
+
+print("O valor vendido ao fim do dia é: ", total)
+print("A quantidade de vendas registradas é: ", contador)
+print("O valor médio das vendas foi: ", media)
