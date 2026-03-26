@@ -8,14 +8,17 @@
 # 2 x 1 = 2
 # ...
 
-numero = (int(input("Digite seu número: ")))
+numero = 0
 
 contador = 1
 
 resultado = 0
 
-while contador <= 10:
-    resultado = numero * contador
-    contador = contador + 1
+while numero <= 9:
     numero = numero + 1
-    print(resultado)
+    print("------------------")
+    contador = 1
+    while contador <= 9:
+        resultado = numero * contador
+        contador = contador + 1
+        print(f"{numero} x {contador} = {resultado}")
