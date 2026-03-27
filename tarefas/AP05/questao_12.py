@@ -7,9 +7,13 @@
 
 coluna = int(input("Digite a quantidade de colunas: "))
 linhas = int(input("Digite a quantidade de linhas: "))
+quantidadel = 1
+quantidadec = 1
 
-
-while (linhas):
-    while (colunas):
+while quantidadel <= linhas:
+    quantidadel = quantidadel + 1
+    quantidadec = 1
+    while quantidadec <= coluna:
         print("*", end="")
+        quantidadec = quantidadec + 1    
     print()
