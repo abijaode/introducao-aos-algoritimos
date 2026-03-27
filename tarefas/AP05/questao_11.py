@@ -10,7 +10,7 @@
 
 numero = 0
 
-contador = 1
+contador = 2
 
 resultado = 0
 
@@ -20,5 +20,5 @@ while numero <= 9:
     contador = 1
     while contador <= 9:
         resultado = numero * contador
-        contador = contador + 1
         print(f"{numero} x {contador} = {resultado}")
+        contador = contador + 1
